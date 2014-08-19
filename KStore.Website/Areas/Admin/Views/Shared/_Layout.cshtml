@@ -1,0 +1,20 @@
+﻿<html>
+<body>
+    @Styles.Render("~/Content/Admin/css")
+            @Html.Partial("~/Areas/Admin/Views/Shared/_Menu.cshtml")
+
+        <div class="body-content col-md-11 center">
+            @RenderBody()
+        </div>
+
+
+        @Scripts.Render("~/scripts/vendor")
+        <script src="~/Scripts/require.js" data-main="@Url.Content("~/App/main")"></script>
+        @RenderSection("scripts", required: false)
+
+@* "http://code.jquery.com/jquery-migrate-1.2.1.min.js",*@
+@Scripts.Render("~/bundles/jquery",
+     "~/bundles/jqueryval",
+     "~/bundles/bootstrap")
+</body>
+</html>

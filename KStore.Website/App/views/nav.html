@@ -1,0 +1,81 @@
+﻿<div class="navbar navbar-inverse navbar-fixed-top">
+
+    <div class="container ">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav margin-left-nav" data-bind="foreach: router.navigationModel">
+                <li>
+                    <a data-bind="css: { active: isActive }, attr: { href: hash }, text: title" href="#"></a>
+                </li>
+
+            </ul>
+            <ul>
+                <!--<li> <input type="text" placeholder="Sök produkt" /></li>-->
+            </ul>
+            <div id="search-product">
+                <input type="text" placeholder="Sök produkt" class="form-control" id="search-product-text" data-bind="value: searchTextProduct, valueUpdate: 'keyup' " />
+                <button data-bind="click:searchProduct" class="btn btn-default" id="btn-search"> <span class="glyphicon glyphicon-search display-line"></span></button>
+            </div>
+
+            <div id="cart-wrapper">
+                <div id="cart-toggle" class="display-line">
+                    <span data-bind="text:itemName()"></span> <span class="glyphicon glyphicon-chevron-down"></span>
+                </div>
+                <button class="btn btn-red btn-shopping-cart display-line ">Till kassan</button>
+
+                <div id="cart-overlay-wrapper" class=" display-none">
+                    <div class="row">
+                        <div class="col-md-offset-9 col-md-3 close-cart-overlay"><strong>Stäng <span class="glyphicon glyphicon-remove"></span></strong></div>
+                    </div>
+                    <div id="cart-overlay-items">
+                        <ul data-bind="foreach:cartItems" class="list-unstyled list-cart-items">
+                            <li class="removeItem">
+                                <input type="hidden" data-bind="attr:{value:id}">
+                                <div class=" row">
+                                    <div class="col-md-5"><img src="" class="cart-item-image" data-bind="attr:{src:image}" /> </div>
+
+                                    <div class="col-md-5 cart-item-name"><a href="" data-bind="text:name ,attr:{ href:'#productdetail/'+ id }"></a></div>
+                                    <div class="col-md-1" style="margin-top:3%"><span class="glyphicon glyphicon-trash"></span></div>
+
+                                    <div class="row">
+                                        <div class="col-md-3 cart-item-price">
+                                            <span data-bind="text:price"></span>
+                                        </div>
+                                        <div class="col-md-3"><span data-bind="text:quantity+' st'"></span></div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="cart-totalprice">
+                        <div class="row">
+                            <div class="col-md-2 col-md-offset-1"><h4>Total</h4> </div>
+                            <div class="col-md-4"><h4 style="color:red" data-bind="text:cartTotalPrice()+' Kr.'"></h4></div>
+                            <div class="col-md-4"><button class="btn btn-red btn-shopping-cart">Gå till kassan</button></div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="navbar-right">
+
+        </div>
+
+    </div>
+</div>
+
+<div class="loader pull-right" data-bind="css: { active: router.isNavigating }">
+
+</div>

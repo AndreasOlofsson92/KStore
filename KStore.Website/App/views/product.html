@@ -1,0 +1,23 @@
+﻿<a data-bind="attr:{href:'/#productdetail/'+id}">
+    <div class="row">
+        <div class="thumbnail">
+            <img src="" alt="" class="img-thumbnail img-product" data-bind="attr:{src: imagePath}" />
+        </div>
+        <div class="caption">
+            <div class="row">
+                <div class="col-xs-offset-1 col-md-offset-2 col-md-10">
+
+                    <h4 class="product-name" data-bind="text:name"></h4>
+                    <p class="product-description" data-bind="text:description"></p>
+
+                    <p class="product-description">Leveranstid: <span data-bind="text:deliveryTime"></span></p>
+                    <p class="product-description">Lagerstatus: <span data-bind="text: stockStatus"></span></p>
+                    <p class="product-price"> <span data-bind="text:price"></span> Kr.</p>
+                    <input type="submit" class="btn btn-red btn-buy-product" data-bind="attr:{ id:id }" value="Lägg i varukorgen" />
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</a>

@@ -1,0 +1,62 @@
+﻿
+<section id="shoppingcart" class="view">
+    <div class="row">
+        <div class="col-md-offset-1">
+            <h3>Kassa-Betalning</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-offset-1 col-md-10">
+            <table class="table table-shoppingcart">
+                <thead class="table-head">
+                    <tr>
+                        <td></td>
+                        <td>
+                            Titel
+                        </td>
+                        <td>
+                            Antal
+                        </td>
+                        <td>
+                            Pris
+                        </td>
+                        <td></td>
+                        <td>
+                            Summa
+                        </td>
+                    </tr>
+                </thead>
+                <tbody data-bind="foreach:cartItems">
+                    <tr class="removeItem">
+                        <td class="img-shoppingcart"><img src="" class=" img-responsive" data-bind="attr:{src:image}" /> </td>
+                        <td><a href="" class="cart-item-name" data-bind="text:name ,attr:{ href:'#productdetail/'+ id }"></a></td>
+                        <td> <span data-bind="text:quantity+ ' st'"></span> </td>
+                        <td class="product-price" data-bind="text:price"></td>
+                        <td> <span class="glyphicon glyphicon-trash"></span><input type="hidden" data-bind="attr:{value:id}"></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                <tfoot class="table-head">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <h5>Totalt</h5>
+                        </td>
+                        <td><h5 data-bind="text:totalPrice()"></h5></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-offset-8 col-md-4 btn-checkout-paypal">
+            <img src="https://www.paypal.com/sv_SE/i/btn/btn_xpressCheckout.gif" class="btn-checkout-paypal">
+        </div>
+    </div>
+
+
+</section>

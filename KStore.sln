@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KStore.Domain", "KStore.Model\KStore.Domain.csproj", "{D581B8BF-8B51-4776-BCF1-E500141476DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KStore.Data", "KStore.Data\KStore.Data.csproj", "{1D5CEB27-65F4-4A2E-B854-B7A43D6A771A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KStore.Website", "KStore.Website\KStore.Website.csproj", "{7B53352D-413B-4660-9BB5-84E4C0C1BF83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D581B8BF-8B51-4776-BCF1-E500141476DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D581B8BF-8B51-4776-BCF1-E500141476DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D581B8BF-8B51-4776-BCF1-E500141476DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D581B8BF-8B51-4776-BCF1-E500141476DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D5CEB27-65F4-4A2E-B854-B7A43D6A771A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D5CEB27-65F4-4A2E-B854-B7A43D6A771A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D5CEB27-65F4-4A2E-B854-B7A43D6A771A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D5CEB27-65F4-4A2E-B854-B7A43D6A771A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B53352D-413B-4660-9BB5-84E4C0C1BF83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B53352D-413B-4660-9BB5-84E4C0C1BF83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B53352D-413B-4660-9BB5-84E4C0C1BF83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B53352D-413B-4660-9BB5-84E4C0C1BF83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,27 @@
+﻿<div>
+    <header data-bind="compose: { view: 'nav' }"></header>
+    <div class="row margin-top">
+
+        <div class="col-md-11 center-site">
+            <div id="sidebar" class="col-md-2">
+                <ul class="sidebar-header nav nav-pills nav-stacked">
+                    <li id="sidebar-header-text">
+                        <h6><strong>Kategorier</strong></h6>
+                    </li>
+                </ul>
+
+                <div class="category-list">
+                    <ul data-bind="foreach:categories" class="nav nav-pills nav-stacked">
+                        <li class="display-line">
+                            <a data-bind="text:$data.name,attr:{ href:'#category/'+$data.name}" class="display-line" href=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section id="content" class="main container col-md-10"
+                     data-bind="router: { transition: 'entrance', cacheViews: true }"></section>
+
+            <!--<!--<footer data-bind="compose: { view: 'footer' }"></footer>-->
+        </div>
+    </div>
+</div>

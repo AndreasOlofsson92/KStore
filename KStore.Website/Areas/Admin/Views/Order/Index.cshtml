@@ -1,0 +1,53 @@
+﻿@model IEnumerable<KStore.Domain.Model.Order>
+
+    @{
+            ViewBag.Title = "Index";
+        }
+
+
+        <table class="table">
+            <tr>
+                <th>
+                        @Html.DisplayNameFor(model => model.Id)
+                    </th>
+                <th>
+                        @Html.DisplayNameFor(model => model.Created)
+                    </th>
+
+
+                <th>@Html.DisplayNameFor(model => model.DeliveryAddress)</th>
+                    <th>@Html.DisplayNameFor(model => model.DeliveryLocation)</th>
+                    <th>@Html.DisplayNameFor(model => model.DeliveryPostcode)</th>
+                    <th>@Html.DisplayNameFor(model => model.Customer.Email)</th>
+            </tr>
+            @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Id)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Created)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DeliveryAddress)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DeliveryLocation)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DeliveryPostcode)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Customer.Email)
+                        </td>
+
+
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                            @Html.ActionLink("Details", "Details", new { id = item.Id }) 
+                        </td>
+                    </tr>
+                }
+
+        </table>

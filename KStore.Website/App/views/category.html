@@ -1,0 +1,21 @@
+﻿<section class="view">
+    <div class="col-md-12 center-content">
+        <h5 data-bind="text: thiscategory"></h5>
+        <div class="row" data-bind="compose:{view:'productfilter'}">
+        </div>
+
+        <div class="row" id="p">
+
+            <section data-bind="foreach:showProducts">
+
+                <div class="col-md-3 productView">
+
+                    <div data-bind="compose: { model:$data, view: 'views/product'}">
+
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+</section>

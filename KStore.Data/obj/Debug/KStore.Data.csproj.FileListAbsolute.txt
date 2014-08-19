@@ -1,0 +1,16 @@
+C:\Users\Andreas\documents\visual studio 2013\Projects\KStore\KStore.Data\obj\Debug\KStore.Data.csprojResolveAssemblyReference.cache
+C:\Users\Andreas\documents\visual studio 2013\Projects\KStore\KStore.Data\bin\Debug\KStore.Data.dll.config
+C:\Users\Andreas\documents\visual studio 2013\Projects\KStore\KStore.Data\bin\Debug\KStore.Data.dll
+C:\Users\Andreas\documents\visual studio 2013\Projects\KStore\KStore.Data\bin\Debug\KStore.Data.pdb
+C:\Users\Andreas\documents\visual studio 2013\Projects\KStore\KStore.Data\bin\Debug\EntityFramework.dll
+C:\Users\Andreas\documents\visual studio 2013\Projects\KStore\KStore.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Andreas\documents\visual studio 2013\Projects\KStore\KStore.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Andreas\documents\visual studio 2013\Projects\KStore\KStore.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Andreas\documents\visual studio 2013\Projects\KStore\KStore.Data\bin\Debug\EntityFramework.xml
+C:\Users\Andreas\documents\visual studio 2013\Projects\KStore\KStore.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Andreas\documents\visual studio 2013\Projects\KStore\KStore.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Andreas\documents\visual studio 2013\Projects\KStore\KStore.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Andreas\documents\visual studio 2013\Projects\KStore\KStore.Data\obj\Debug\KStore.Data.dll
+C:\Users\Andreas\documents\visual studio 2013\Projects\KStore\KStore.Data\obj\Debug\KStore.Data.pdb
+C:\Users\Andreas\Documents\Visual Studio 2013\Projects\KStore\KStore.Data\bin\Debug\KStoreDomain.Model.dll
+C:\Users\Andreas\Documents\Visual Studio 2013\Projects\KStore\KStore.Data\bin\Debug\KStoreDomain.Model.pdb

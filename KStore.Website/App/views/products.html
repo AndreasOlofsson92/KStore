@@ -1,0 +1,17 @@
+﻿<section class="view">
+    <div class="col-md-12 center-content">
+
+        <div class="row" data-bind="compose:{view:'productfilter'}">
+        </div>
+
+        <div class="row ">
+
+            <section data-bind=" foreach:products">
+                <div class="col-md-3 productView">
+                    <div data-bind="compose: { model:$data, activate: true, view: 'views/product'}"></div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+</section>

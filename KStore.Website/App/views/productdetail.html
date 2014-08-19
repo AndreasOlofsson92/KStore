@@ -1,0 +1,35 @@
+﻿
+
+<section id="product-detail-view" class="view" data-bind="with:product">
+    <div class="col-md-12 ">
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <a href="" data-bind="attr:{href:imagePath}" class="start-lightbox">
+                    <img src="" class=" img-responsive product-detail-photo img-product" alt="" data-bind="attr:{src: imagePath}" />
+                </a>
+            </div>
+
+            <div class="col-md-6">
+
+                <div class="row">
+
+                    <div class="col-md-10">
+                        <h1 data-bind=" text:name" class="product-name"></h1>
+                    </div>
+
+                    <div class="col-md-10 product-detail-short-desc">
+                        <p class="product-detail-description" data-bind="text:description()"></p>
+                        <p class="product-detail-description" data-bind="text:'Leveranstid:'+ deliveryTime()"></p>
+                        <p class="product-detail-description" data-bind="text: 'Lagerstatus: ' +stockStatus()"></p>
+                        <p class="product-price product-detail-price" data-bind="text:price() +' kr.'"></p>
+                        <input type="submit" class="btn btn-red btn-buy-product btn-buy-product-details" data-bind="attr:{id:id()}" value="Lägg i varukorgen">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>

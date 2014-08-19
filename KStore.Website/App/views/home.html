@@ -1,0 +1,39 @@
+﻿<section class="col-md-12">
+    <div class="row">
+        <div class="col-md-12 center ">
+            <ul id="slideShow">
+                <li>
+                    <img src="/images/samsungs5.jpg" />
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <h4>Senaste produkter</h4>
+        <hr />
+
+
+        <section data-bind="foreach: newProducts">
+
+            <div class="col-md-3 productView" data-bind="compose: { view: 'product' }">
+            </div>
+        </section>
+    </div>
+
+    <div class="row">
+        <h4>Mest populära produkter</h4>
+        <hr />
+    </div>
+
+    <div class="row">
+
+        <section data-bind="foreach: popularProducts">
+
+            <div class="col-md-3 productView" data-bind="compose: { view: 'product' }">
+
+            </div>
+        </section>
+    </div>
+</section>
